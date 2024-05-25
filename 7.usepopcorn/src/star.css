@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.stars{
+    display: flex;
+    gap: 5px;
+}
+.star{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
