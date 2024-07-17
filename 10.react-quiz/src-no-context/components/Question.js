@@ -1,7 +1,5 @@
-import { useAppContext } from "../contexts/AppContext";
 import Option from "./Option";
-function Question() {
-  const { question, dispatch, answer } = useAppContext();
+function Question({ question, dispatch, answer }) {
   return (
     <div>
       <h4>{question.question}</h4>

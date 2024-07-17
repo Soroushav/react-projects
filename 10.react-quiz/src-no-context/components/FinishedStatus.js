@@ -1,7 +1,4 @@
-import { useAppContext } from "../contexts/AppContext";
-
-function FinishedStatus() {
-    const {points, totalPoints, highScore, dispatch} = useAppContext()
+function FinishedStatus({points, totalPoints, highScore, dispatch}) {
     const percentage = (points / totalPoints) * 100;
     let emoji;
     if (percentage === 100) emoji= "🏅";

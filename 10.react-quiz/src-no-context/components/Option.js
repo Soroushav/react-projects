@@ -1,7 +1,4 @@
-import { useAppContext } from "../contexts/AppContext";
-
-function Option() {
-  const { question, dispatch, answer } = useAppContext();
+function Option({ question, dispatch, answer }) {
   const hasAnswered = answer !== null;
   return (
     <div className="options">
